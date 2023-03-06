@@ -1,0 +1,48 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url('../fonts/Pacifico-Regular.ttf');
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pacifico', Courier, monospace;
+}
+
+body {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+#content {
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    border-radius: 10%;
+    border: 10px groove blueviolet;
+    box-shadow: 10px 10px gold;
+    color: palevioletred;
+    margin: 30px;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#list > div {
+    display: flex;
+}
+
+#list > div > img {
+    height: 20px;
+    margin-right: 10px;
+}
