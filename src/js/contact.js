@@ -1,5 +1,5 @@
 import h1 from './h1'
-import description from './divDescription'
+import form from "./form"
 import contactMessage from './contactMessage'
 import nav from './nav'
 
@@ -13,5 +13,6 @@ export default function contact() {
     body.append(nav())
     body.append(h1('Contact with Casa Fernando'))
     body.append(contactMessage())
+    body.append(form())
 
 }
