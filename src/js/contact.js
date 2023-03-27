@@ -1,9 +1,9 @@
 import h1 from './h1'
 import description from './divDescription'
-import info from './info'
+import contactMessage from './contactMessage'
 import nav from './nav'
 
-export default function home() {
+export default function contact() {
     
     const body = document.querySelector('#content')
     while (body.firstChild) {
@@ -11,8 +11,7 @@ export default function home() {
     }
 
     body.append(nav())
-    body.append(h1('Casa Fernando'))
-    body.append(description())
-    body.append(info())
+    body.append(h1('Contact with Casa Fernando'))
+    body.append(contactMessage())
 
 }

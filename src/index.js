@@ -1,5 +1,5 @@
 import './css/style.css';
 
-import body from './js/home'
+import home from './js/home'
 
-body()
+home()

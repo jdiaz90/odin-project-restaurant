@@ -1,7 +1,7 @@
-export default function h1() {
+export default function h1(text) {
 
     let h1 = document.createElement('h1')
-    h1.textContent = 'Casa Fernando'
+    h1.textContent = text
     return h1
 
 }

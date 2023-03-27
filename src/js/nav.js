@@ -1,21 +1,35 @@
+import home from './home'
+import contact from './contact'
+import menu from './menu'
+
 export default function nav() {
 
     let nav = document.createElement('nav')
     let ul = document.createElement('ul')
-    let home = document.createElement('li')
-    let about = document.createElement('li')
-    let menu = document.createElement('li')
+    let liHome = document.createElement('li')
+    let liContact = document.createElement('li')
+    let liMenu = document.createElement('li')
 
     nav.className = 'menu'
     
-    home.textContent = 'Home'
-    about.textContent = 'About'
-    menu.textContent = 'Menu'
+    liHome.textContent = 'Home'
+    liContact.textContent = 'Contact'
+    liMenu.textContent = 'Menu'
+
+    liHome.addEventListener('click', () => {
+        home()
+    })
+    liContact.addEventListener('click', () => {
+        contact()
+    })
+    liMenu.addEventListener('click', () => {
+        menu()
+    })
 
     nav.appendChild(ul)
-    ul.appendChild(home)
-    ul.appendChild(about)
-    ul.appendChild(menu)
+    ul.appendChild(liHome)
+    ul.appendChild(liContact)
+    ul.appendChild(liMenu)
 
     return nav
 
