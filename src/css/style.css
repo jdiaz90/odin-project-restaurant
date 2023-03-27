@@ -25,6 +25,17 @@ body {
     margin: 30px;
 }
 
+nav.menu > ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none; 
+    gap: 20px;
+}
+
+nav.menu > ul > li {
+    cursor: pointer;
+}
+
 #info {
     display: flex;
     justify-content: space-between;
