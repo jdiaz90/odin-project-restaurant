@@ -1,0 +1,88 @@
+@font-face {
+    font-family: 'Pacifico';
+    src: url(c0d735fc04154e03a691.ttf);
+}
+
+* {
+    box-sizing: border-box;
+    font-family: 'Pacifico', Courier, monospace;
+}
+
+body {
+    width: 800px;
+    margin: 0 auto;
+    padding: 10px;
+    background-color: black;
+}
+
+#content {
+    background-color: lightgoldenrodyellow;
+    padding: 30px;
+    border-radius: 10%;
+    border: 10px groove blueviolet;
+    box-shadow: 10px 10px gold;
+    color: palevioletred;
+    margin: 30px;
+}
+
+nav.menu > ul {
+    display: flex;
+    justify-content: right;
+    list-style-type: none; 
+    gap: 20px;
+}
+
+nav.menu > ul > li {
+    cursor: pointer;
+}
+
+#info {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+}
+
+#list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+
+#list > div {
+    display: flex;
+}
+
+#list > div > img {
+    height: 20px;
+    margin-right: 10px;
+}
+
+form.contact {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+form.contact > input, form.contact > textarea {
+    width: 100%;
+}
+
+.grid-menu-food {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+}
+
+.grid-menu-food > .food-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.grid-menu-food > .food-item > img {
+    width: 200px;
+    border-radius: 10px;
+}
