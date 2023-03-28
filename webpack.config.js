@@ -29,6 +29,7 @@ module.exports = {
   plugins: [
     new CleanWebpackPlugin(),
     new HtmlWebpackPlugin({
+      cache: false,
       title: "Odin Restaurant",
       template: "index.html"
     }),

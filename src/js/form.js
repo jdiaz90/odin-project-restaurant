@@ -3,7 +3,7 @@ import inputText from "./inputText"
 export default function form() {
 
     let form = document.createElement('form')
-    let name = inputText('name', 'Your name', true)
+    let name = inputText('name', 'Your name', 'text', true)
     let email = inputText('email', 'Your email', 'email', true)
     let phone = inputText('phone', 'Your phone')
     let text = document.createElement('textarea')
